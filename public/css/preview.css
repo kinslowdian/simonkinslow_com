@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+#preview
+{
+	width: 100%;
+	position: absolute;
+	background: #fff;
+
+	cursor: pointer;
+}
+
+#preview .preview-content
+{
+	width: 100%;
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#preview .preview-content img
+{
+	position: relative;
+	max-width: 100%;
+
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+
+	touch-callout: none;
+	user-select: none;
+
+	-webkit-transition: opacity 250ms ease-in;
+	transition: opacity 250ms ease-in;
+
+	z-index: 0;
+}
+
+
+
+#preview .preview-preloader-sprite
+{
+	width: 240px;
+	height: 240px;
+
+	position: absolute;
+	left: 0; right: 0; top: 0; bottom: 0;
+
+	margin: 80px auto 0 auto;
+
+	z-index: 0;
+}
+
+.preview-lock
+{
+	-webkit-transform: translateX(100%);
+	transform: translateX(100%);
+	overflow-y: hidden;
+	/* overflow: hidden; */
+	/* position: fixed; */
+	max-height: 100%;
+	/* display: block; */
+}
+
+.preview-safety
+{
+	display: none;
+}
+
+.preview-default
+{
+	display: none;
+}
+
+
+.preview-preloader-sprite .preview-preloader-dot
+{
+	width: inherit;
+	height: inherit;
+	position: absolute;
+	left: 0; top: 0;
+
+	-webkit-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+
+	background: url(../img/wheel.svg) center center no-repeat;
+}
+
+.preview-preload-tween
+{
+	-webkit-animation: cogFrames 800ms linear infinite;
+	animation: cogFrames 800ms linear infinite;
+}
+
+@-webkit-keyframes cogFrames
+{
+	0%		{-webkit-transform: rotate(0deg);}
+	100%	{-webkit-transform: rotate(360deg);}
+}
+
+@keyframes cogFrames
+{
+	0%		{transform: rotate(0deg);}
+	100%	{transform: rotate(360deg);}
+}
+
+@media only screen and (min-width: 300px)
+{
+	#preview .preview-preloader-sprite
+	{
+		width: 120px;
+		height: 120px;
+	}
+}
+
+@media only screen and (min-width: 600px)
+{
+	#preview .preview-preloader-sprite
+	{
+		width: 240px;
+		height: 240px;
+	}
+}
+
+/* RETINA LAPTOPS */
+@media screen and (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 1000px) and (min-width: 1030px), screen and (min-device-pixel-ratio: 2) and (min-device-width: 1000px) and (min-width: 1030px)
+{
+	#preview .preview-content img
+	{
+		width: 50%;
+/*
+		border-left: 1px solid rgb(230, 230, 240);
+		border-right: 1px solid rgb(230, 230, 240);
+*/
+	}
+}

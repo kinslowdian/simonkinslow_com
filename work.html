@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="description" content="Portfolio of Senior Digital Designer Simon Kinslow 2016">
+<meta name="keywords" content="Kinslowdian, Simon Kinslow, Designer, Developer" />
+<meta name="revised" content="Simon Kinslow, 13/05/2016" />
+
+<link href='https://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="public/css/reset.css">
+<link rel="stylesheet" type="text/css" href="public/css/simonk.css">
+<link rel="stylesheet" type="text/css" href="public/css/extra.css">
+<link rel="stylesheet" type="text/css" href="public/css/preview.css">
+
+<title>The Portfolio of Simon Kinslow / Work</title>
+
+</head>
+
+<body onload="portfolio_init(event); preview_init();">
+
+<div class="mobile-nav tween mobile-nav-default">
+	<div class="page-inner">
+		<div class="nav">
+			<div class="nav-left center-y">
+				<h2 class="font-heavy">Menu</h2>
+			</div>
+			<div class="nav-close"></div>
+		</div>
+
+		<ul class="mobile-nav-main font-light">
+			<li><a href="index.html">Welcome</a></li>
+			<li class="page-current" onclick="navigation_event(event);"><a href="#">Work</a></li>
+			<li><a href="personal.html">Own Projects</a></li>
+			<li><a href="contact.html">Contact / Misc</a></li>
+		</ul>
+
+	</div>
+</div> <!-- .mobile-nav -->
+
+<div id="preview" class="tween preview-default preview-hide">
+	<div class="preview-content">
+
+		<div class="preview-preloader-sprite">
+			<div class="preview-preloader-dot tween"></div>
+		</div>
+
+		<img src="" onload="preview_preloader_end(event);">
+
+
+	</div>
+</div> <!-- #preview -->
+
+<div class="page-wrapper tween">
+
+	<div class="page-content">
+
+		<div class="page-inner">
+
+			<div class="nav">
+
+				<div class="nav-left center-y">
+					<h2 class="font-heavy"><a href="index.html"><span class="def">Simon Kinslow</span><span class="mob">S Kinslow</span></a></h2>
+					<div class="name-icon tween no-select">
+						<div class="player-sprite tween-player-XX">
+							<div class="map-goat-legs pixels_map_player tween-mapPlayerWalk_stop"></div>
+							<div class="map-goat-body pixels_map_player"></div>
+							<div class="map-goat-head pixels_map_player tween-map-goat-head mapPlayer_head_fear"></div>
+							<div class="map-goat-hand-L pixels_map_player tween-map-goat-hand-L"></div>
+							<div class="map-goat-hand-R pixels_map_player tween-map-goat-hand-R"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="nav-right center-y">
+					<ul class="nav-links font-light">
+						<li class="tween page-current">Work</li>
+						<li class="tween"><a href="personal.html">Own Projects</a></li>
+						<li class="tween"><a href="contact.html">Contact / Misc</a></li>
+					</ul>
+				</div>
+
+				<div class="nav-hamburger"></div>
+
+			</div> <!-- .nav -->
+
+			<div class="title-block">
+
+				<h1 class="font-heavy">Work</h1>
+
+			</div> <!-- .title-block -->
+
+			<section class="project-hero">
+				<img src="public/img/project_hero_canon.jpg">
+				<div class="project-info">
+					<ul>
+						<li class="project-info-details">
+							<h3 class="font-heavy">Canon Interactive Installation</h3>
+
+							<p class="font-light">TMW Unlimited were tasked in building an interactive installation for Canon on the technical side. Phase two of the project involved a redesign of the original interface / UI to improve from the original, and include requirements for future use within a retail environment. </p><p class="font-light">My role as a designer involved working closely with UX to identify improvements throughout for a better experience, and to keep the sharp clean style of the original. Applications and skills used during the project: Photoshop, and Illustrator.</p>
+						</li>
+
+						<li class="project-info-ui">
+							<div class="ui-basic-button font-heavy tween" onclick="preview_request(event);" data-img="http://simonkinslow.com/_assets/_img/_workIMG/projectCanon.jpg">Design preview</div>
+<!-- 							<a class="ui-basic-button font-heavy tween" href="#" target="_blank">View website</a> -->
+						</li>
+					</ul>
+				</div>
+			</section> <!-- .project-hero -->
+			
+			
+			<section class="project-hero">
+				<img src="public/img/project_hero_princes_trust.jpg">
+				<div class="project-info">
+					<ul>
+						<li class="project-info-details">
+							<h3 class="font-heavy">Prince’s Trust #partofPT</h3>
+
+							<p class="font-light">To mark the 40th anniversary of the prince's trust, an online hub was created for those involved to share their memories and experiences to highlight the size of the trust. The campaign was powered by the Twitter platform hashtag’d to link users video and images into galleries for others to share and add. </p><p class="font-light">My role as a lead designer on the project, involved creating designs that had a clear hierarchy, creation of extra modules and UI that matched the parent site, and were within restraints of technical requirements. Making sure information and instructions in all pages were presented within the design clearly for a wide user age group. Applications and skills used during the project: Photoshop, and Illustrator.</p>
+						</li>
+
+						<li class="project-info-ui">
+							<div class="ui-basic-button font-heavy tween" onclick="preview_request(event);" data-img="http://simonkinslow.com/_assets/_img/_workIMG/projectPrincesTrust.jpg">Design preview</div>
+							<a class="ui-basic-button font-heavy tween" href="https://partofpt.princes-trust.org.uk/part-of-pt/" target="_blank">View website</a>
+						</li>
+					</ul>
+				</div>
+			</section> <!-- .project-hero -->
+			
+			
+			<section class="project-hero">
+				<img src="public/img/project_hero_sony_x.jpg">
+				<div class="project-info">
+					<ul>
+						<li class="project-info-details">
+							<h3 class="font-heavy">Sony Xperia X Pre-order</h3>
+
+							<p class="font-light">Notified users wishing to be updated about the pre-order of the latest Sony Xperia would receive this email. To really catch their attention I created a simple gif animation for the header using footage from media linked to the campaign to create a intro transition. </p><p class="font-light">Using simple stacked modules with full colour bleed backgrounds ensured recipients would get a similar experience on both desktop and mobile with the responsive template. Applications and skills used during the project: Photoshop, Illustrator and After Effects. HTML / CSS for presentation of concept.</p>
+						</li>
+
+						<li class="project-info-ui">
+							<div class="ui-basic-button font-heavy tween" onclick="preview_request(event);" data-img="http://simonkinslow.com/_assets/_img/_workIMG/projectSonyXperiaX.jpg">Design preview</div>
+							<a class="ui-basic-button font-heavy tween" href="http://simonkinslow.com/_projects/-sony_xperia_x/" target="_blank">View email</a>
+						</li>
+					</ul>
+				</div>
+			</section> <!-- .project-hero -->
+
+
+			<div class="section-title section-title-list">
+				<h2 class="font-heavy">2015</h2>
+			</div> <!-- .title -->
+
+			<section class="project-hero">
+				<img src="public/img/project_hero_barilla.jpg">
+				<div class="project-info">
+					<ul>
+						<li class="project-info-details">
+							<h3 class="font-heavy">Barilla Global Platform</h3>
+
+							<p class="font-light">With many operations across the world, the websites lacked consistency with each region. TMW Unlimited was asked to come up with a global solution for markets to use. The team adopted a user centered design approach, identifying various personas and their requirements. The design of modules were heavily reviewed and tested throughout. </p><p class="font-light">I was involved in many sprint sessions throughout the project, working closely with UX and Development to be sure our ideas and solutions were possible. Getting an insight into what websites appealed to the client, the initial creative process started with forming three style tiles, to present three possible design routes using that inspiration to get very close to the vision Barilla had in their minds sooner within a very big project. Applications and skills used during the project: Photoshop, and Illustrator. HTML / CSS for presentations during sprints.</p>
+						</li>
+
+						<li class="project-info-ui">
+							<div class="ui-basic-button font-heavy tween" onclick="preview_request(event);" data-img="http://simonkinslow.com/_assets/_img/_workIMG/projectBarilla.jpg">Design preview</div>
+							<a class="ui-basic-button font-heavy tween" href="https://www.barilla.com/en-us/" target="_blank">View website</a>
+						</li>
+					</ul>
+				</div>
+			</section> <!-- .project-hero -->
+			
+			
+			<section class="project-hero">
+				<img src="public/img/project_hero_campaign_theBar.jpg">
+				<div class="project-info">
+					<ul>
+						<li class="project-info-details">
+							<h3 class="font-heavy">thebar.com Campaign Page</h3>
+
+							<p class="font-light">To highlight Diageo’s brands over various points of the year, required the creation of a reusable campaign page to match closely the other forms of advertising and marketing released at that time. The focus for the initial creation used campaign material planned for the summer of 2015. </p><p class="font-light">I was tasked with the UX and design on this brief, to form reviewed wireframes after discussions with the client over various requirements. I worked closely with development after to be sure my solution would work within the backend of the site and the browsers the parent site targeted and how to present the campaign clearly for mobile users. Applications and skills used during the project: Photoshop, and Illustrator.</p>
+						</li>
+
+						<li class="project-info-ui">
+							<div class="ui-basic-button font-heavy tween" onclick="preview_request(event);" data-img="http://simonkinslow.com/_assets/_img/_workIMG/projectShakeItUp.jpg">Design preview</div>
+							<a class="ui-basic-button font-heavy tween" href="https://uk.thebar.com/shakeitup" target="_blank">View website</a>
+						</li>
+					</ul>
+				</div>
+			</section> <!-- .project-hero -->
+			
+
+			<div class="section-title section-title-list">
+				<h2 class="font-heavy">2014</h2>
+			</div> <!-- .title -->
+
+
+			<section class="project-hero">
+				<img src="public/img/project_hero_christmas_tracker.jpg">
+				<div class="project-info">
+					<ul>
+						<li class="project-info-details">
+							<h3 class="font-heavy">Christmas Tracker</h3>
+
+							<p class="font-light">For the leadup to Christmas in 2014, I worked with another designer and developer at TMW on a side project to track christmas terms used on twitter. Starting off with a list of words / terms we illustrated many characters and objects best to suit those and then housed them within a scene that zoomed when the user scrolled. To keep everything crisp and sharp our creations were exported as SVG. </p><p class="font-light">The project took around three weeks to produce outside of work, just in time for a launch at the start of december, using Google Drive to share and collaborate with assets. An option to kindly donate to the charity Shelter was also added. Applications and skills used during the project: Illustrator.</p>
+						</li>
+
+						<li class="project-info-ui">
+							<div class="ui-basic-button font-heavy tween" onclick="preview_request(event);" data-img="http://simonkinslow.com/_assets/_img/_workIMG/projectChristmas.jpg">Design preview</div>
+							<a class="ui-basic-button font-heavy tween" href="http://www.christmastracker.com/" target="_blank">View website</a>
+						</li>
+					</ul>
+				</div>
+			</section> <!-- .project-hero -->
+			
+			
+			<section class="project-hero">
+				<img src="public/img/project_hero_virginTrains.jpg">
+				<div class="project-info">
+					<ul>
+						<li class="project-info-details">
+							<h3 class="font-heavy">Virgin Trains, Arrive Awesome</h3>
+
+							<p class="font-light">To push more ticket sales, the Arrive Awesome campaign covered TV, press, outdoor, social, and digital advertising. Online the campaign resulted in 25 million online impressions, and the campaign on a whole increased revenue by £13.5 million. With my experience in Flash advertising, this was to be my first introduction to HTML banners on the build side. </p><p class="font-light">It was an immense challenge in getting everything to run correctly across multiple devices and multiple browsers, and to match the storyboards exactly. Workarounds and solutions were aplenty, and solving issues was very satisfying. I learnt a great deal about javascript development from this project, while working within the development team, and thankfully have never relied on jQuery again! Applications and skills used during the project: HTML, CSS, SASS, and Javascript.</p>
+						</li>
+
+						<li class="project-info-ui">
+<!-- 							<div class="ui-basic-button font-heavy tween" onclick="preview_request(event);" data-img="http://simonkinslow.com/_assets/_img/_workIMG/projectOfgem.jpg">Design preview</div> -->
+							<a class="ui-basic-button font-heavy tween" href="http://simonkinslow.com/_projects/virgintrains/" target="_blank">View banners</a>
+						</li>
+					</ul>
+				</div>
+			</section> <!-- .project-hero -->
+			
+			
+			<section class="project-hero">
+				<img src="public/img/project_hero_ofgem.jpg">
+				<div class="project-info">
+					<ul>
+						<li class="project-info-details">
+							<h3 class="font-heavy">Ofgem goenergyshopping.co.uk</h3>
+
+							<p class="font-light">With Ofgem bringing in changes to simplify the energy market, TMW were tasked with creating an online hub of information for the public about these and future changes planned. With a user age range of 18-80 meant ease of use was mandatory across all pages. Colours were contrast checked throughout the design process to cater for as many as possible at AA standard. </p><p class="font-light">A friendly vibe was incorporated into the design with strong use of colour, and SVG Icons that sat with their relative article to avoid lots of FAQ like templates. I worked as a Lead designer and Illustrator throughout the project, working closely with development and UX at many stages. Applications and skills used during the project: Photoshop, and Illustrator.</p>
+						</li>
+
+						<li class="project-info-ui">
+							<div class="ui-basic-button font-heavy tween" onclick="preview_request(event);" data-img="http://simonkinslow.com/_assets/_img/_workIMG/projectOfgem.jpg">Design preview</div>
+							<a class="ui-basic-button font-heavy tween" href="http://www.goenergyshopping.co.uk/en-gb" target="_blank">View website</a>
+						</li>
+					</ul>
+				</div>
+			</section> <!-- .project-hero -->
+			
+			
+			<section class="project-hero">
+				<img src="public/img/project_hero_sure.jpg">
+				<div class="project-info">
+					<ul>
+						<li class="project-info-details">
+							<h3 class="font-heavy">Sure DO:MORE</h3>
+
+							<p class="font-light">To push the DO:MORE branding of Sure deodorant, TMW covered POS, social, ECRM, print, and a TV ad with this campaign. Focusing on summer festival tickets achieved through competition codes. My first task involved the creation of the online hub and keeping a premium, easy to use style from the landing page, all the way through to the submit form. </p><p class="font-light">I was heavily involved in the creative for online advertising after the hub design. To target as possible, the accompanying media was built both in Flash and the Celtra ad platform to allow rich animation on mobile and tablet devices using html / css. Altogether the campaign achieved 39% ad recognition and one million social impressions. Applications and skills used during the project: Photoshop, Illustrator, Flash, and Celtra.</p>
+						</li>
+
+						<li class="project-info-ui">
+							<div class="ui-basic-button font-heavy tween" onclick="preview_request(event);" data-img="http://simonkinslow.com/_assets/_img/_workIMG/projectSure.jpg">Design preview</div>
+<!-- 							<a class="ui-basic-button font-heavy tween" href="http://www.goenergyshopping.co.uk/en-gb" target="_blank">View website</a> -->
+						</li>
+					</ul>
+				</div>
+			</section> <!-- .project-hero -->
+			
+			
+			<div class="section-title section-title-list">
+				<h2 class="font-heavy">2013</h2>
+			</div> <!-- .title -->
+
+			<section class="project-hero">
+				<img src="public/img/project_hero_infiniti_eu.jpg">
+				<div class="project-info">
+					<ul>
+						<li class="project-info-details">
+							<h3 class="font-heavy">Infiniti Website Relaunch</h3>
+
+							<p class="font-light">While the Infiniti.com website was being built for Europe, TMW were asked to create a brand hub to fill the gap in between and overhaul the current site used for the region. Design, UX and development worked closely within a small team over a period of a few months to be seamless in creating the site. </p><p class="font-light">A key requirement was to present the user with information that was considered yet organised, and to avoid being text heavy. Focusing on full bleed imagery to highlight the premium products Infiniti were creating. Clear navigation, easy on the eye, and a strategy to simplify the user journey and to increase user engagement to eventually submitting their information for a possible test drive. User base for the site increased by 26% compared to the previous hub. Applications and skills used during the project: Photoshop, and Illustrator.</p>
+						</li>
+
+						<li class="project-info-ui">
+							<div class="ui-basic-button font-heavy tween" onclick="preview_request(event);" data-img="http://simonkinslow.com/_assets/_img/_workIMG/projectInfiniti.jpg">Design preview</div>
+							<a class="ui-basic-button font-heavy tween" href="http://www.infiniti.eu/" target="_blank">View website</a>
+						</li>
+					</ul>
+				</div>
+			</section> <!-- .project-hero -->
+			
+			
+			<section class="project-hero">
+				<img src="public/img/project_hero_BBC.jpg">
+				<div class="project-info">
+					<ul>
+						<li class="project-info-details">
+							<h3 class="font-heavy">BBC iPlayer</h3>
+
+							<p class="font-light">This brief was part of a pitch within the BBC, over methods on how to monetise parts of the iPlayer outside the UK for oversea customers, similar to subscription services and iTunes. Taking the strategy and user journey on how this could be a possibility, my task involved bringing this to life within the design of program landing pages on the main BBC website, while working closely with an Art Director and UX. </p><p class="font-light">I had to balance usability and cosmetics to keep a page looking rich and appealing with full bleed backgrounds, while being easy to use for multiple personas. Keeping the BBC brand and careful consideration to UI and CTA’s. A strong focus on designing for tablet use was a requirement throughout. Applications and skills used during the project: Photoshop, and Illustrator.</p>
+						</li>
+
+						<li class="project-info-ui">
+							<div class="ui-basic-button font-heavy tween" onclick="preview_request(event);" data-img="http://simonkinslow.com/_assets/_img/_workIMG/projectBBC.jpg">Design preview</div>
+<!-- 							<a class="ui-basic-button font-heavy tween" href="http://www.infiniti.eu/" target="_blank">View website</a> -->
+						</li>
+					</ul>
+				</div>
+			</section> <!-- .project-hero -->
+
+			<div class="section-title section-title-list">
+				<h2 class="font-heavy">2012</h2>
+			</div> <!-- .title -->
+
+			<section class="project-hero">
+				<img src="public/img/project_hero_theBar.jpg">
+				<div class="project-info">
+					<ul>
+						<li class="project-info-details">
+							<h3 class="font-heavy">thebar.com</h3>
+
+							<p class="font-light">The first brief I started on when joining TMW soon became the biggest too. Diageo’s theBar.com at the time existed only in the US as a cocktail recipe site. A release planned for Europe allowed an opportunity to redesign, and rethink the entire user journey completely, from page layout right down to the UI. Working with an Art Director, and UX helped to keep the balance of a premium yet usable site. </p><p class="font-light">Brand awareness was in union alongside clearly presented cocktail recipes and never overpowering. After launch results were impressive too, 300,000 average visits a month, with 50% of traffic from portable devices, and over 100 social shares a week. Applications and skills used during the project: Photoshop, and Illustrator.</p>
+						</li>
+
+						<li class="project-info-ui">
+							<div class="ui-basic-button font-heavy tween" onclick="preview_request(event);" data-img="http://simonkinslow.com/_assets/_img/_workIMG/projectTheBar.jpg">Design preview</div>
+							<a class="ui-basic-button font-heavy tween" href="https://uk.thebar.com/" target="_blank">View website</a>
+						</li>
+					</ul>
+				</div>
+			</section> <!-- .project-hero -->
+			
+			
+			<section class="project-hero">
+				<img src="public/img/project_hero_dulux.jpg">
+				<div class="project-info">
+					<ul>
+						<li class="project-info-details">
+							<h3 class="font-heavy">Dulux Help Book</h3>
+
+							<p class="font-light">A rich media campaign built in multiple sizes in the form of a retail booklet showing the vibrancy of Dulux paints. The user can flick through each page scene and clicking through to obtain a test pack of the colour used within the background photography. My role on the project involved layout design and initial storyboard, right through to animating and programming the media placement in Flash for DoubleClick. Applications and skills used during the project: Photoshop, Illustrator, and Flash. Developed in actionScript 3.0.</p>
+						</li>
+
+						<li class="project-info-ui">
+							<div class="ui-basic-button font-heavy tween" onclick="preview_request(event);" data-img="http://simonkinslow.com/_assets/_img/_workIMG/dulux.jpg">Design preview</div>
+							<a class="ui-basic-button font-heavy tween" href="http://www.simonkinslow.com/_projects/-dulux/" target="_blank">View Flash</a>
+						</li>
+					</ul>
+				</div>
+			</section> <!-- .project-hero -->
+			
+			
+			<section class="project-hero">
+				<img src="public/img/project_hero_google.jpg">
+				<div class="project-info">
+					<ul>
+						<li class="project-info-details">
+							<h3 class="font-heavy">It’s Good To Know by Google</h3>
+
+							<p class="font-light">Google presented many tips on how to stay safe online with personal information and security. To push that message further came in the form of a book that existed in various rich media placements. Artwork and illustrations from the campaign were all included to give a sketch book aesthetic to the overall design. Page turning of the book was refined and tested to keep the experience as rich and realistic as I could. </p><p class="font-light">Along with a system that loaded in the pages dynamically to help filesize restraints with the media space. Different languages were also required for the campaign to run in Europe too. Applications and skills used during the project: Photoshop, Illustrator, and Flash. Developed in actionScript 3.0.</p>
+						</li>
+
+						<li class="project-info-ui">
+							<div class="ui-basic-button font-heavy tween" onclick="preview_request(event);" data-img="http://simonkinslow.com/_assets/_img/_workIMG/googleBookUS.jpg">Design preview</div>
+							<a class="ui-basic-button font-heavy tween" href="http://www.simonkinslow.com/_projects/-googleBook/" target="_blank">View Flash</a>
+						</li>
+					</ul>
+				</div>
+			</section> <!-- .project-hero -->
+			
+
+			<div class="section-title section-title-list">
+				<h2 class="font-heavy">2011</h2>
+			</div> <!-- .title -->
+			
+
+			<section class="project-hero">
+				<img src="public/img/project_hero_adidas_teamGB.jpg">
+				<div class="project-info">
+					<ul>
+						<li class="project-info-details">
+							<h3 class="font-heavy">Team GB, adidas</h3>
+
+							<p class="font-light">In the run up to the Olympics in 2012,  adidas wanted to release  a new line of Stella McCartney designed sportswear. To create interest and provide information to potential customers about these new products, an idea was formed to create a microsite from scratch that lived inside adidas.com. </p><p class="font-light">Featuring a one page site solution and having control over the UX, I decided on accordions and tabs to house the relative sections. With access to rich photography provided by adidas, made the process of achieving a premium look and feel much easier. A small team involving myself, a producer, a developer, and an account manager had complete ownership of the project throughout. Applications and skills used during the project: Photoshop, and Illustrator.</p>
+						</li>
+
+						<li class="project-info-ui">
+							<div class="ui-basic-button font-heavy tween" onclick="preview_request(event);" data-img="http://simonkinslow.com/_assets/_img/_workIMG/projectAdidasStella.jpg">Design preview</div>
+<!-- 							<a class="ui-basic-button font-heavy tween" href="#" target="_blank">View website</a> -->
+						</li>
+					</ul>
+				</div>
+			</section> <!-- .project-hero -->
+			
+			
+			<section class="project-hero">
+				<img src="public/img/project_hero_adidas_areYouIn.jpg">
+				<div class="project-info">
+					<ul>
+						<li class="project-info-details">
+							<h3 class="font-heavy">Are You In, adidas</h3>
+
+							<p class="font-light">Releasing alongside TV and print with adidas’ “Are You In” Campaign, glue Isobar were tasked with creation of a competition hub that would be another route to gaining awareness on social platforms like Facebook and Twitter. The competitions were more focused on the brand interacting with current culture than to do with sport. </p><p class="font-light">Design wise I pushed to make the layout as rich as possible but not overpowering. Clear division between sections with use of full bleed backgrounds of campaign imagery to link to the other areas of the advertising. Applications and skills used during the project: Photoshop, and Illustrator.</p>
+						</li>
+
+						<li class="project-info-ui">
+							<div class="ui-basic-button font-heavy tween" onclick="preview_request(event);" data-img="http://simonkinslow.com/_assets/_img/_workIMG/projectAdidasAreYouIn.jpg">Design preview</div>
+<!-- 							<a class="ui-basic-button font-heavy tween" href="#" target="_blank">View website</a> -->
+						</li>
+					</ul>
+				</div>
+			</section> <!-- .project-hero -->
+			
+			
+			<section class="project-hero">
+				<img src="public/img/project_hero_adidas_teaser.jpg">
+				<div class="project-info">
+					<ul>
+						<li class="project-info-details">
+							<h3 class="font-heavy">Teaser Countdown, adidas</h3>
+
+							<p class="font-light">To gain attention to the start of the “Are You In” campaign online, a teaser was set up on adidas.com counting down to the event starting. Design wise, I came up with an idea of pulling in random images from the overall campaign triggered every five seconds by the time. While the bold adidas font was layered on top with smooth transitions between each countdown unit. Applications and skills used during the project: Photoshop, Illustrator, and Flash. Developed in actionScript 3.0.</p>
+						</li>
+
+						<li class="project-info-ui">
+							<div class="ui-basic-button font-heavy tween" onclick="preview_request(event);" data-img="http://simonkinslow.com/_assets/_img/_workIMG/adidasAYIcountdown.jpg">Design preview</div>
+							<a class="ui-basic-button font-heavy tween" href="http://www.simonkinslow.com/_projects/-adidas_areyouin_teaser/" target="_blank">View flash</a>
+						</li>
+					</ul>
+				</div>
+			</section> <!-- .project-hero -->
+			
+			
+			<section class="project-hero">
+				<img src="public/img/project_hero_nokia_n9.jpg">
+				<div class="project-info">
+					<ul>
+						<li class="project-info-details">
+							<h3 class="font-heavy">Nokia N9</h3>
+
+							<p class="font-light">For the release of Nokia’s N9 glue Isobar had presented a concept and idea around an AR website using the webcam api in Flash to interact with the phone using gestures. Here users could get an insight into the latest UI of the phone and see all other features and benefits with the product. After experimenting with the handset I went on to design and direct a style that matched the bold colours of the handset and take hints of the UI on the phone’s OS. </p><p class="font-light">CTA’s were treated more like hotspots than buttons, and required a different approach to other microsites previously designed. I supported the Flash developers during the build stage, supplying assets and animating sequences and screens in After Effects. Applications and skills used during the project: Photoshop, Illustrator, Flash, and After Effects.</p>
+						</li>
+
+						<li class="project-info-ui">
+							<div class="ui-basic-button font-heavy tween" onclick="preview_request(event);" data-img="http://simonkinslow.com/_assets/_img/_workIMG/nokiaN9.jpg">Design preview</div>
+<!-- 							<a class="ui-basic-button font-heavy tween" href="#" target="_blank">View website</a> -->
+						</li>
+					</ul>
+				</div>
+			</section> <!-- .project-hero -->
+
+
+			<div class="footer-ape no-select">
+				<div class="monkey_king_area monkey_king_area_ice">
+
+					<div class="monkey_king_masked">
+
+						<div class="monkey_king_holder tween-monkey_king_holder">
+
+							<div class="monkey_king_main tween-monkey_king_main">
+
+								<div class="monkey_king_body pixels_monkeyKingdomIce tween-monkey_king_body"></div>
+
+								<div class="monkey_king_head pixels_monkeyKingdomIce tween-monkey_king_head">
+
+									<div class="monkey_king_mouth pixels_monkeyKingdomIce tween-monkey_king_mouth"></div>
+
+								</div>
+
+								<div class="monkey_king_hands pixels_monkeyKingdomIce tween-monkey_king_hands"></div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+		</div> <!-- .page-inner -->
+
+	</div> <!-- .page-content -->
+
+<footer>
+	<div class="page-content">
+		<div class="page-inner">
+			<p class="signoff-deets font-heavy">Designed & developed 2016</p>
+			<p class="signoff-email font-heavy tween"><a href="mailto:simonkinslow@gmail.com">simonkinslow@gmail.com</a></p>
+		</div>
+	</div>
+</footer>
+
+</div> <!-- .page-wrapper -->
+
+<script type="text/javascript" src="public/js/simonk.js"></script>
+<script type="text/javascript" src="public/js/preview.js"></script>
+</body>
+
+</html>

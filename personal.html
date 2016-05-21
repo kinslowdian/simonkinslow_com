@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="description" content="Portfolio of Senior Digital Designer Simon Kinslow 2016">
+<meta name="keywords" content="Kinslowdian, Simon Kinslow, Designer, Developer" />
+<meta name="revised" content="Simon Kinslow, 13/05/2016" />
+
+<link href='https://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="public/css/reset.css">
+<link rel="stylesheet" type="text/css" href="public/css/simonk.css">
+<link rel="stylesheet" type="text/css" href="public/css/extra.css">
+<link rel="stylesheet" type="text/css" href="public/css/preview.css">
+
+<title>The Portfolio of Simon Kinslow / Personal</title>
+
+</head>
+
+<body onload="portfolio_init(event); preview_init();">
+
+<div class="mobile-nav tween mobile-nav-default">
+	<div class="page-inner">
+		<div class="nav">
+			<div class="nav-left center-y">
+				<h2 class="font-heavy">Menu</h2>
+			</div>
+			<div class="nav-close"></div>
+		</div>
+
+		<ul class="mobile-nav-main font-light">
+			<li><a href="index.html">Welcome</a></li>
+			<li><a href="work.html">Work</a></li>
+			<li class="page-current" onclick="navigation_event(event);"><a href="#">Own Projects</a></li>
+			<li><a href="contact.html">Contact / Misc</a></li>
+		</ul>
+
+	</div>
+</div> <!-- .mobile-nav -->
+
+<div id="preview" class="tween preview-default preview-hide">
+	<div class="preview-content">
+
+		<div class="preview-preloader-sprite">
+			<div class="preview-preloader-dot tween"></div>
+		</div>
+
+		<img src="" onload="preview_preloader_end(event);">
+
+
+	</div>
+</div> <!-- #preview -->
+
+<div class="page-wrapper tween">
+
+	<div class="page-content">
+
+		<div class="page-inner">
+
+			<div class="nav">
+
+				<div class="nav-left center-y">
+					<h2 class="font-heavy"><a href="index.html"><span class="def">Simon Kinslow</span><span class="mob">S Kinslow</span></a></h2>
+					<div class="name-icon tween no-select">
+						<div class="player-sprite tween-player-XX">
+							<div class="map-goat-legs pixels_map_player tween-mapPlayerWalk_stop"></div>
+							<div class="map-goat-body pixels_map_player"></div>
+							<div class="map-goat-head pixels_map_player tween-map-goat-head mapPlayer_head_happy"></div>
+							<div class="map-goat-hand-L pixels_map_player tween-map-goat-hand-L"></div>
+							<div class="map-goat-hand-R pixels_map_player tween-map-goat-hand-R"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="nav-right center-y">
+					<ul class="nav-links font-light">
+						<li class="tween"><a href="work.html">Work</a></li>
+						<li class="tween page-current">Own Projects</li>
+						<li class="tween"><a href="contact.html">Contact / Misc</a></li>
+					</ul>
+				</div>
+
+				<div class="nav-hamburger"></div>
+
+			</div> <!-- .nav -->
+
+			<div class="title-block">
+
+				<h1 class="font-heavy">Own Projects</h1>
+
+			</div> <!-- .title-block -->
+
+			<section class="project-hero">
+				<img src="public/img/project_hero_.jpg">
+				<div class="project-info">
+					<ul>
+						<li class="project-info-details">
+							<h3 class="font-heavy">A Forest of Wormholes</h3>
+
+							<p class="font-light">After countless experiments with Actionscript and a few large online projects, I never got the chance to make a game because of the focus moving away from Flash over to HTML5 at the time. With my time spent learning HTML, CSS, and Javascript I decided back in 2013 this would be the perfect time to push my skills in developing a game for an experiment. Gameplay involves navigating through the portals to progress to further levels, eventually having to defeat enemies through battles involving paper / rock / scissors. </p><p class="font-light">Part maze, part adventure, and my attempt at an RPG was good experience in further learning web development away from Flash. My only regret with the project, relying on jQuery for the whole build, maybe one day I’ll rewrite this project to run smoother on today’s modern browsers. Applications and skills used during the project: Photoshop, and Illustrator. HTML, CSS, JSON, and Javascript.</p>
+						</li>
+
+						<li class="project-info-ui">
+							<div class="ui-basic-button font-heavy tween" onclick="preview_request(event);" data-img="http://simonkinslow.com/_assets/_img/_miscIMG/projectAFOW.jpg">Design preview</div>
+							<a class="ui-basic-button font-heavy tween" href="http://www.simonkinslow.com/afow/" target="_blank">View website</a>
+						</li>
+					</ul>
+				</div>
+			</section> <!-- .project-hero -->
+
+
+			<div class="section-title section-title-list">
+				<h2 class="font-heavy">2013</h2>
+			</div> <!-- .title -->
+
+			<section class="project-hero">
+				<img src="public/img/project_hero_mario.jpg">
+				<div class="project-info">
+					<ul>
+						<li class="project-info-details">
+							<h3 class="font-heavy">Broken Image Link Mario</h3>
+
+							<p class="font-light">One day  while using Safari, I noticed the icon used for missing images was very close to the item blocks in just about all the Nintendo Mario games. For a bit of fun I worked out the pixel grid of the famous mario sprite, and then rendered this within the page using javascript. Gradually with a delay, each block would run a basic css transition, changing the broken link into the correct pixel colour. </p><p class="font-light">When finally complete the sprite would explode randomly in a mass of colour blocks. Tapping any one of these will rebuild the sprite, rewinding the effect. Applications and skills used during the project: Photoshop. HTML, CSS, and Javascript.</p>
+						</li>
+
+						<li class="project-info-ui">
+							<div class="ui-basic-button font-heavy tween" onclick="preview_request(event);" data-img="http://simonkinslow.com/_assets/_img/_miscIMG/projectMario.jpg">Design preview</div>
+							<a class="ui-basic-button font-heavy tween" href="http://www.simonkinslow.com/mario404/" target="_blank">View website</a>
+						</li>
+					</ul>
+				</div>
+			</section> <!-- .project-hero -->
+			
+			
+			<section class="project-hero">
+				<img src="public/img/project_hero_hungryMonkey.jpg">
+				<div class="project-info">
+					<ul>
+						<li class="project-info-details">
+							<h3 class="font-heavy">The Hungry Monkey Clock</h3>
+
+							<p class="font-light">In the past I had seen many graphical clocks online, built in either Flash or HTML5. I looked into an idea for one that was interactive. In past to keep an old watch or antique clock running, the user would have to wind the mechanism. I decided to create a clock that required feeding to display the time correctly. </p><p class="font-light">Pressing the monkey’s nose would ensure a steady stream of bananas, supplying them energy to wake them up. As each monkey falls asleep the scene gradually forms into night with a gentle transition. Instructions are also supplied in a novel way to be sure the clock works as desired. Applications and skills used during the project: Illustrator. HTML, CSS, and Javascript.</p>
+						</li>
+
+						<li class="project-info-ui">
+							<div class="ui-basic-button font-heavy tween" onclick="preview_request(event);" data-img="http://simonkinslow.com/_assets/_img/_miscIMG/projectHungryMonkeyClock.jpg">Design preview</div>
+							<a class="ui-basic-button font-heavy tween" href="http://www.simonkinslow.com/thehungrymonkeyclock/" target="_blank">View website</a>
+						</li>
+					</ul>
+				</div>
+			</section> <!-- .project-hero -->
+			
+
+			<div class="section-title section-title-list">
+				<h2 class="font-heavy">2012</h2>
+			</div> <!-- .title -->
+
+			<section class="project-hero">
+				<img src="public/img/project_hero_god_of_wind.jpg">
+				<div class="project-info">
+					<ul>
+						<li class="project-info-details">
+							<h3 class="font-heavy">The God of Wind app</h3>
+
+							<p class="font-light">Extending my interest in experimenting with HTML / CSS / Javascript led to a fictional web app called the God of Wind. Used to detect if a huge wind god would fall within your area and give you time to reach safety! The app would first detect where the user was situated, use this data to retrieve the weather at that given moment via an api, and check the wind speed to decide the outcome. </p><p class="font-light">A windy day would result in a prefered safe ending, while a warm day in the summer could be very dangerous. To add to the novelty, a google map is displayed showing the shadow of the god falling amongst clouds and other animation effects. Applications and skills used during the project: Photoshop, and Illustrator. HTML, CSS, and Javascript.</p>
+						</li>
+
+						<li class="project-info-ui">
+							<div class="ui-basic-button font-heavy tween" onclick="preview_request(event);" data-img="http://simonkinslow.com/_assets/_img/_miscIMG/projectGodOfWind.jpg">Design preview</div>
+							<a class="ui-basic-button font-heavy tween" href="http://www.simonkinslow.com/tgow/" target="_blank">View website</a>
+						</li>
+					</ul>
+				</div>
+			</section> <!-- .project-hero -->
+			
+			
+			<section class="project-hero">
+				<img src="public/img/project_hero_moonlit_options.jpg">
+				<div class="project-info">
+					<ul>
+						<li class="project-info-details">
+							<h3 class="font-heavy">Some Moonlit Options</h3>
+
+							<p class="font-light">Throughout my career generally my portfolios had been built using Flash, this was to be the first to move away from that trend, and to finish off the Jackdaw trilogy theme with side projects. The project allowed me to realise just how much I could do with css animations and having these run on a phone and tablet was very exciting at the time and generated lots of ideas. </p><p class="font-light">The moon within the minimal scene that sits above the branches, will show its correct phase using data from the system clock. Applications and skills used during the project: Photoshop. HTML, CSS, and Javascript.</p>
+						</li>
+
+						<li class="project-info-ui">
+							<div class="ui-basic-button font-heavy tween" onclick="preview_request(event);" data-img="http://simonkinslow.com/_assets/_img/_miscIMG/projectMoonlitOptions.jpg">Design preview</div>
+							<a class="ui-basic-button font-heavy tween" href="http://simonkinslow.com/index_2012.html" target="_blank">View website</a>
+						</li>
+					</ul>
+				</div>
+			</section> <!-- .project-hero -->
+			
+			
+			<div class="section-title section-title-list">
+				<h2 class="font-heavy">2011</h2>
+			</div> <!-- .title -->
+
+			
+			<section class="project-hero">
+				<img src="public/img/project_hero_roosting.jpg">
+				<div class="project-info">
+					<ul>
+						<li class="project-info-details">
+							<h3 class="font-heavy">Roosting Amongst Levels</h3>
+
+							<p class="font-light">I wanted my portfolio to do more, so experimented by allowing the user being to wander around the environment, controlling one of the many jackdaws sitting within the scene. Ideas kept coming through the build process, even the inclusion of a secret level, only accessed by talking to certain birds. Controls were kept simple to the arrow keys, up to jump, and down to chirp. </p><p class="font-light">Users had the option to skip between the levels too using default mouse controls. Controlling sound and adding random noises helped to create a very dense atmosphere. To optimise performance leaving the window will cause the flash player to run at a very low frame rate, returning bumps the refresh rate back to 50. Applications and skills used during the project: Photoshop, Illustrator, and Flash. Actionscript 3.0, and XML.</p>
+						</li>
+
+						<li class="project-info-ui">
+							<div class="ui-basic-button font-heavy tween" onclick="preview_request(event);" data-img="http://simonkinslow.com/_assets/_img/_miscIMG/projectRoosting.jpg">Design preview</div>
+							<a class="ui-basic-button font-heavy tween" href="http://www.simonkinslow.com/_2011/" target="_blank">View flash</a>
+						</li>
+					</ul>
+				</div>
+			</section> <!-- .project-hero -->
+			
+
+			<section class="project-hero">
+				<img src="public/img/project_hero_nine_seconds.jpg">
+				<div class="project-info">
+					<ul>
+						<li class="project-info-details">
+							<h3 class="font-heavy">Nine Seconds of Utter Grief</h3>
+
+							<p class="font-light">An abandoned project but open to be started again in the future. I remember at university a lecturer telling us the average user will lose interest after nine seconds. This mini collection of crazy games would hopefully supply the user a frantic nine seconds of their life, making quick decisions before the timer reaches zero. Animation within the game was quick and fast to match the overall theme. </p><p class="font-light">As the project had been intended for Flash, focus on that shifted after reports at the time that Adobe wouldn’t be able to get the Flash player running on Apple devices. Applications and skills used during the project: Photoshop, Illustrator, and Flash. Actionscript 3.0, and XML.</p>
+						</li>
+
+						<li class="project-info-ui">
+							<div class="ui-basic-button font-heavy tween" onclick="preview_request(event);" data-img="http://simonkinslow.com/_assets/_img/_miscIMG/nineSecs.jpg">Design preview</div>
+<!-- 							<a class="ui-basic-button font-heavy tween" href="http://www.simonkinslow.com/thehungrymonkeyclock/" target="_blank">View website</a> -->
+						</li>
+					</ul>
+				</div>
+			</section> <!-- .project-hero -->
+			
+			
+			<div class="section-title section-title-list">
+				<h2 class="font-heavy">2010</h2>
+			</div> <!-- .title -->
+
+			<section class="project-hero">
+				<img src="public/img/project_hero_their_last_ever.jpg">
+				<div class="project-info">
+					<ul>
+						<li class="project-info-details">
+							<h3 class="font-heavy">Their Last Ever…</h3>
+
+							<p class="font-light">This project started in 2009 and went on through design and development into the autumn of 2010. Despite the time spent on this side project, I learnt so much about programming and at that point in time, it was the most advanced project I’ve ever undertaken. I wanted to have three scenes to resemble hours, minutes, and seconds. Looking at either scene at different times of the day would result in a scene to match. </p><p class="font-light">Users were presented a sunrise sky, or bright stars at night, a whole day captured within a webpage. Users had the option to fast forward through the day light settings, and even change the weather using the overlay menu. Early in the project’s life, it was linked up to an XML weather feed from the BBC to adjust the scene on the data it received. Applications and skills used during the project: Photoshop, Illustrator, and Flash. Actionscript 2.0, and XML.</p>
+						</li>
+
+						<li class="project-info-ui">
+							<div class="ui-basic-button font-heavy tween" onclick="preview_request(event);" data-img="http://simonkinslow.com/_assets/_img/_miscIMG/projectTheirLastEver.jpg">Design preview</div>
+							<a class="ui-basic-button font-heavy tween" href="http://www.theirlastever.com/" target="_blank">View flash</a>
+						</li>
+					</ul>
+				</div>
+			</section> <!-- .project-hero -->
+
+
+			<div class="section-title section-title-list">
+				<h2 class="font-heavy">2009</h2>
+			</div> <!-- .title -->
+
+			<section class="project-hero">
+				<img src="public/img/project_hero_wheat.jpg">
+				<div class="project-info">
+					<ul>
+						<li class="project-info-details">
+							<h3 class="font-heavy">Wheat</h3>
+
+							<p class="font-light">In late 2005 I sent a random email to a band I had liked from 19 in the US called Wheat about a possible redesign of their website. From 2005 - 2009 I created two websites for them, one involving pure HTML, with a very textured and printed look and a lovely concept of images linked to short stories and quotes. </p><p class="font-light">The other was a complete contrast, built in Flash and very rich with media and colour. Both side projects provided me with knowledge that became valuable early within my career. Applications and skills used during the project: Photoshop, Illustrator, and Flash. HTML, Actionscript 2.0, and XML.</p>
+						</li>
+
+						<li class="project-info-ui">
+							<div class="ui-basic-button font-heavy tween" onclick="preview_request(event);" data-img="http://simonkinslow.com/_assets/_img/_miscIMG/wheat.jpg">Design preview</div>
+<!-- 							<a class="ui-basic-button font-heavy tween" href="http://www.simonkinslow.com/thehungrymonkeyclock/" target="_blank">View website</a> -->
+						</li>
+					</ul>
+				</div>
+			</section> <!-- .project-hero -->
+
+
+			<div class="section-title section-title-list">
+				<h2 class="font-heavy">2007</h2>
+			</div> <!-- .title -->
+
+			<section class="project-hero">
+				<img src="public/img/project_hero_the_polish_brothers.jpg">
+				<div class="project-info">
+					<ul>
+						<li class="project-info-details">
+							<h3 class="font-heavy">The Polish Brothers</h3>
+
+							<p class="font-light">I was asked out of the blue by two filmmakers about redesigning their site for a freelance job, at the time they were working with Billy Bob Thornton on a film called The Astronaut Farmer. Using influences from their films mainly Northfork, I focused on pages that made use of the wide space and gentle use of typography, all with a printed texture applied on top. Applications and skills used during the project: Photoshop, Illustrator. HTML.</p>
+						</li>
+
+						<li class="project-info-ui">
+							<div class="ui-basic-button font-heavy tween" onclick="preview_request(event);" data-img="http://simonkinslow.com/_assets/_img/_miscIMG/polishBrothers.jpg">Design preview</div>
+							<a class="ui-basic-button font-heavy tween" href="http://www.simonkinslow.com/_projects/polishbrothers/" target="_blank">View website</a>
+						</li>
+					</ul>
+				</div>
+			</section> <!-- .project-hero -->
+			
+			
+			<div class="section-title section-title-list">
+				<h2 class="font-heavy">2005</h2>
+			</div> <!-- .title -->
+
+			<section class="project-hero">
+				<img src="public/img/project_hero_bombus_pet.jpg">
+				<div class="project-info">
+					<ul>
+						<li class="project-info-details">
+							<h3 class="font-heavy">The Bombus Pet</h3>
+
+							<p class="font-light">After minor use of After Effects at university one of my first side projects after graduating was a short animation. Mixing my interest in textures and materials to create a fun little art project involving a disgruntled user with a virtual bee pet. After some research how the sting of a bee attracts others as a form of protection, is certainly an underlying theme within the animation. I even ventured into stop frame animation sequences for some parts of the film. Applications and skills used during the project: Photoshop, Illustrator, Flash, SoundEdit, and After Effects.</p>
+						</li>
+
+						<li class="project-info-ui">
+							<div class="ui-basic-button font-heavy tween" onclick="preview_request(event);" data-img="http://simonkinslow.com/_assets/_img/_miscIMG/bombus.jpg">Design preview</div>
+							<a class="ui-basic-button font-heavy tween" href="https://vimeo.com/14237176" target="_blank">Play Video</a>
+						</li>
+					</ul>
+				</div>
+			</section> <!-- .project-hero -->
+
+
+			<div class="section-title section-title-list">
+				<h2 class="font-heavy">2004</h2>
+			</div> <!-- .title -->
+
+			<section class="project-hero">
+				<img src="public/img/project_hero_lost_paths.jpg">
+				<div class="project-info">
+					<ul>
+						<li class="project-info-details">
+							<h3 class="font-heavy">The Lost Paths</h3>
+
+							<p class="font-light">One of my final projects at University, I worked closely with a fellow student in creating a little world that can be manipulated by elements. We split the workload in half, and my task focused on character design, their animation, and interactivity within the environments. Throughout we worked together to ensure everything was compatible when we merged our files to create the final outcome. Applications and skills used during the project: Freehand, SoundEdit, and Flash. Actionscript 1.0.</p>
+						</li>
+
+						<li class="project-info-ui">
+							<div class="ui-basic-button font-heavy tween" onclick="preview_request(event);" data-img="http://simonkinslow.com/_assets/_img/_miscIMG/lostPaths.jpg">Design preview</div>
+							<a class="ui-basic-button font-heavy tween" href="http://www.simonkinslow.com/simonkWork/lostPaths/lostpathpage.html" target="_blank">View flash</a>
+						</li>
+					</ul>
+				</div>
+			</section> <!-- .project-hero -->
+			
+			
+			<section class="project-hero">
+				<img src="public/img/project_hero_absurdism.jpg">
+				<div class="project-info">
+					<ul>
+						<li class="project-info-details">
+							<h3 class="font-heavy">The Absurdism Fanzine</h3>
+
+							<p class="font-light">My answer to a University brief on Beat culture and movement, involved the creation of an online fanzine focused on nuclear disarmament. It was a rewarding challenge in trying to get the pamphlet to look as real as possible within a webpage. I experimented heavily with textures and layering within photoshop, and adding ambient background music for each section. And yes... that is Neil from The Young Ones! Applications and skills used during the project: Photoshop, Freehand, Illustrator, Flash, and SoundEdit.</p>
+						</li>
+
+						<li class="project-info-ui">
+							<div class="ui-basic-button font-heavy tween" onclick="preview_request(event);" data-img="http://simonkinslow.com/_assets/_img/_miscIMG/absurdism.jpg">Design preview</div>
+							<a class="ui-basic-button font-heavy tween" href="http://www.simonkinslow.com/_projects/absurdism/absurdism.html" target="_blank">View website</a>
+						</li>
+					</ul>
+				</div>
+			</section> <!-- .project-hero -->
+
+
+
+
+			<div class="footer-ape no-select">
+				<div class="monkey_king_area monkey_king_area_ice">
+
+					<div class="monkey_king_masked">
+
+						<div class="monkey_king_holder tween-monkey_king_holder">
+
+							<div class="monkey_king_main tween-monkey_king_main">
+
+								<div class="monkey_king_body pixels_monkeyKingdomIce tween-monkey_king_body"></div>
+
+								<div class="monkey_king_head pixels_monkeyKingdomIce tween-monkey_king_head">
+
+									<div class="monkey_king_mouth pixels_monkeyKingdomIce tween-monkey_king_mouth"></div>
+
+								</div>
+
+								<div class="monkey_king_hands pixels_monkeyKingdomIce tween-monkey_king_hands"></div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+		</div> <!-- .page-inner -->
+
+	</div> <!-- .page-content -->
+
+<footer>
+	<div class="page-content">
+		<div class="page-inner">
+			<p class="signoff-deets font-heavy">Designed & developed 2016</p>
+			<p class="signoff-email font-heavy tween"><a href="mailto:simonkinslow@gmail.com">simonkinslow@gmail.com</a></p>
+		</div>
+	</div>
+</footer>
+
+</div> <!-- .page-wrapper -->
+
+<script type="text/javascript" src="public/js/simonk.js"></script>
+<script type="text/javascript" src="public/js/preview.js"></script>
+</body>
+
+</html>
