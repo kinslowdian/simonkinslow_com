@@ -4,12 +4,14 @@ var previewMain;
 
 function preview_init()
 {
-	displayList.preview 					= document.querySelector("#preview");
-	displayList.previewImg 				= document.querySelector("#preview img");
+	displayList.preview 			= document.querySelector("#preview");
+	displayList.previewImg 			= document.querySelector("#preview img");
 	displayList.previewPreloader 	= document.querySelector("#preview .preview-preloader-dot");
-
-	displayList.preview.addEventListener("click", preview_close, false);
-
+	
+	displayList.previewOptions			= document.querySelector("#preview .preview-options");
+	displayList.previewOptionsDisplay	= document.querySelector("#preview .preview-options .preview-options-display");
+	displayList.previewClose			= document.querySelector("#preview .poa-close");
+	displayList.previewCancel			= document.querySelector("#preview .poa-cancel");
 
 	trace("preview_init();");
 }
@@ -36,6 +38,9 @@ function preview_request(event)
 	window.scrollTo(0, 0);
 
 	displayList.preview.classList.remove("preview-default");
+	
+	displayList.preview.addEventListener("click", preview_close, false);
+	displayList.preview.style.cursor = "pointer";
 }
 
 function preview_safety(event)
@@ -55,10 +60,52 @@ function preview_preloader_end(event)
 function preview_close(event)
 {
 	event.preventDefault();
+	
+	displayList.preview.removeEventListener("click", preview_close, false);
+	displayList.preview.style.cursor = "default";
+	
+	
+	displayList.previewOptionsDisplay.style.display = "block";
+	displayList.previewOptions.style.opacity = "1";
+	
+	displayList.previewClose.addEventListener("click", preview_close_options, false);
+	displayList.previewCancel.addEventListener("click", preview_close_options, false);	
+}
 
-	displayList.wrapper.classList.remove("preview-safety");
+function preview_close_options(event)
+{
+	var action;
+	var actionTimer;
+	
+	event.preventDefault();
+	
+	displayList.previewClose.removeEventListener("click", preview_close_options, false);
+	displayList.previewCancel.removeEventListener("click", preview_close_options, false);
+	
+	displayList.previewOptions.style.opacity = "0";
+	
+	action = event.target.getAttribute("data-action");
+	
+	actionTimer = setTimeout(preview_close_choice, 300, action);
+}
 
-	var t = setTimeout(preview_close_apply, 20);
+function preview_close_choice(_action)
+{
+	var exitFrame;
+	
+	displayList.previewOptionsDisplay.style.display = "none";
+	
+	if(_action === "close")
+	{
+		displayList.wrapper.classList.remove("preview-safety");
+		exitFrame = setTimeout(preview_close_apply, 20);
+	}
+	
+	else if(_action === "cancel")
+	{
+		displayList.preview.addEventListener("click", preview_close, false);
+		displayList.preview.style.cursor = "pointer";		
+	}
 }
 
 function preview_close_apply()
